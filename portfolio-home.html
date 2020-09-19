@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="portfolio-home.css" rel="stylesheet" type="text/css">
+        <link href="portfolio-general-style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
+        <title>
+            NK - Android Developer
+        </title>
+    </head>
+    <body>
+        <header class="flex-container" id="top">
+            <p>nabeeha khurshid</p>
+            <nav>
+                <span><a href="#about-scroll">about</a></span> •
+                <span><a href="#project-scroll">projects</a></span> •
+                <span><a href="#contact">contact</a></span>
+            </nav>
+        </header>
+        <main>
+            <div class="welcome content-box flex-container">
+                <p class="box" id="welcome-title">WELCOME.</p>
+            </div>
+            <div class="flex-container intro-text">
+                <p class="box">android developer • student • graphic designer</p>
+                <a href="#about-scroll"><img class="down-arrow-img" src="downarrow.png" id="about-down"></a>
+            </div>
+            <div class="about content-box flex-container" id="about-scroll">
+                <p class="box" id="about-title">ABOUT.</p>
+                <div class="flex-container" id="about-text">
+                    <p class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae fermentum tortor, in vehicula est. Curabitur fermentum urna eget placerat elementum. Sed dui felis, lacinia sit amet accumsan vitae, condimentum quis nibh. Nam pellentesque massa nec pharetra pretium. Nulla semper dui eu faucibus efficitur. Quisque pretium elit ante, et ornare orci malesuada eu. Nam sed quam augue. Ut mattis orci libero. Nullam suscipit semper metus, volutpat iaculis dolor finibus et. Aliquam quis justo nisl.</p>
+                </div>
+                <a href="#project-scroll"> <img class="down-arrow-img" src="downarrow.png" id="project-down"></a>
+            </div>
+            <div class="projects content-box flex-container" id="project-scroll">
+                <p class="box" id="project-title">PROJECTS.</p>
+                <div class="project-buttons flex-container">
+                    <a href="portfolio-android.html"><p class="box">ANDROID APPS</p></a>
+                    <a href="portfolio-graphics.html"><p class="box">GRAPHIC DESIGN</p></a>
+                </div>
+                <a href="#contact"> <img class="down-arrow-img" src="downarrow.png"></a>
+            </div>
+        </main>
+        <footer class="flex-container" id="contact">
+            <div class="flex-container" id="image-box">
+                <img class="contact-icon" src="emailicon.png">
+                <img class="contact-icon" src="linkedinicon.png">
+                <img class="contact-icon" src="githubicon.png">
+            </div>
+            <p><a href="#top">BACK TO TOP</a></p>
+        </footer>
+    </body>
+
+<!--     <script>
+
+        var about = document.getElementById("about-scroll");
+        var aboutButton = document.getElementById("about-down");
+
+        function SmoothVerticalScrolling(e, time, where) {
+            // var eTop = e.getBoundingClientRect().y;
+            // var eAmt = eTop / 100
+            var y = top.innerHeight;
+            var curTime = 0;
+            while (curTime <= time) {
+                window.setTimeout(SVS_B, curTime, y, where);
+                curTime += time / 100;
+            }
+        }
+
+
+        function getPosition(element) {
+            var xPosition = 0;
+            var yPosition = 0;
+            while(element) {
+                xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+                yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+                element = element.offsetParent;
+            }
+            return yPosition;
+        }
+
+
+
+        function SVS_B(y, where) {
+            if(where == "center" || where == "")
+                window.scrollBy(0, y / 2);
+            if (where == "top")
+                window.scrollBy(0, y);
+        }
+
+        aboutButton.addEventListener("click", function(){SmoothVerticalScrolling(about, 100, "center")});
+
+
+    </script> -->
+
+</html>
