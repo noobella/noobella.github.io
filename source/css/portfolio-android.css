@@ -96,8 +96,9 @@ nav span{
 }
 
 #welcome-title{
-    font-size: 14vw;
+    font-size: 14.5vw;
     font-style: italic;
+    width: 100vw;
 }
 
 .intro-text{

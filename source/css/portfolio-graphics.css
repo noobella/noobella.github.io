@@ -56,7 +56,6 @@ a{
     height: auto;
     overflow: visible;
     align-items: center;
-    justify-content: space-around;
 }
 
 .down-arrow-img{
@@ -97,8 +96,9 @@ nav span{
 }
 
 #welcome-title{
-    font-size: 13vw;
+    font-size: 12.5vw;
     font-style: italic;
+    width: 100vw;
 }
 
 .intro-text{
@@ -141,6 +141,10 @@ nav span{
 
 .project-text img{
     height: 300px;
+}
+
+.image{
+    justify-content: space-around;
 }
 
 .project-info{

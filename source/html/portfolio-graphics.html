@@ -20,7 +20,7 @@
         </header>
         <main>
             <div class="welcome content-box flex-container">
-                <p class="box" id="welcome-title">GRAPHIC DESIGN.</p>
+                <p class="box" id="welcome-title"></p>
             </div>
             <div class="flex-container intro-text">
                 <p> <b><i>Graphics</i></b> commissions that I've done.</p>
@@ -29,7 +29,7 @@
             <div class="project content-box flex-container" id="project-one">
                 <p class="box project-title">LOGOS.</p>
                 <div class="flex-container project-text">
-                    <div class="box">
+                    <div class="box image">
                         <img src="../../resources/khurshstylenew3.png">
                         <img src="../../resources/lavishjewellery.png">
                         <div class="project-info">
@@ -48,4 +48,41 @@
             </footer>
         </main>
     </body>
+    <script>
+
+        function textAppear(word, id){
+            var repeat = '';
+            var counter = 0;
+            var interval = setInterval(frame, 150);
+            function frame() {
+                if(counter < word.length){
+                    repeat += word[counter]
+                    document.getElementById(id).innerHTML = repeat + '|';
+                    counter++;
+                }else{
+                    document.getElementById(id).innerHTML = word;
+                    clearInterval(interval);
+                }
+            } 
+        }
+
+        function blinker(word, id){
+            var interval = setInterval(frame, 600);
+            function frame(){
+            if(document.getElementById(id).innerHTML === word){
+                document.getElementById(id).innerHTML = word + '|';
+            }else{
+                document.getElementById(id).innerHTML = word;   
+                }
+            }
+        }
+
+        function setGraphicsTitle(){
+            textAppear('GRAPHIC DESIGN.', 'welcome-title');
+            setTimeout(function() {blinker('GRAPHIC DESIGN.', 'welcome-title');}, 1400);
+        }
+        
+        setGraphicsTitle();
+        
+    </script>
 </html>

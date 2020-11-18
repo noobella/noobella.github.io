@@ -19,7 +19,7 @@
         </header>
         <main>
             <div class="welcome content-box flex-container">
-                <p class="box" id="welcome-title">ANDROID APPS.</p>
+                <p class="box" id="welcome-title"></p>
             </div>
             <div class="flex-container intro-text">
                 <p><b><i>Android</i></b> apps that I am working on.</p>
@@ -48,4 +48,41 @@
             </footer>
         </main>
     </body>
+    <script>
+
+        function textAppear(word, id){
+            var repeat = '';
+            var counter = 0;
+            var interval = setInterval(frame, 150);
+            function frame() {
+                if(counter < word.length){
+                    repeat += word[counter]
+                    document.getElementById(id).innerHTML = repeat + '|';
+                    counter++;
+                }else{
+                    document.getElementById(id).innerHTML = word;
+                    clearInterval(interval);
+                }
+            } 
+        }
+
+        function blinker(word, id){
+            var interval = setInterval(frame, 600);
+            function frame(){
+            if(document.getElementById(id).innerHTML === word){
+                document.getElementById(id).innerHTML = word + '|';
+            }else{
+                document.getElementById(id).innerHTML = word;   
+                }
+            }
+        }
+
+        function setAndroidTitle(){
+            textAppear('ANDROID APPS.', 'welcome-title');
+            setTimeout(function() {blinker('ANDROID APPS.', 'welcome-title');}, 1250);
+        }
+        
+        setAndroidTitle();
+        
+    </script>
 </html>
