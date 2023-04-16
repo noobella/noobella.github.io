@@ -1,0 +1,75 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+}
+
+.outer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 10vw;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: -20vh;
+}
+
+.name {
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.name-item {
+    padding: 0px;
+    margin: -30px;
+}
+
+.home-item {
+    padding: 0vw 5vw 0vw 5vw;
+}
+
+.title {
+    font-size: 7vw;
+    text-align: center;
+}
+
+.about {
+    height: 100vh;
+}
+
+.projects {
+    height: 100vh;
+}
+
+
+ul {
+    list-style-type: square;
+  }
+
+.project-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.project-item {
+    width: 30vw;
+    padding: 0 5vw;
+}
