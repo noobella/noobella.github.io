@@ -7,7 +7,7 @@
         <title>Nabeeha Khurshid</title>
     </head>
     <body>
-        <nav>
+        <nav id="nav">
             <div class="outer-nav">
                 <div class="nav-item">
                     <a href="#about">about</a>
@@ -16,7 +16,10 @@
                     <a href="#projects">projects</a>
                 </div>
                 <div class="nav-item">
-                    <a href="#contact">contact</a>
+                    <div class="">
+                        <a href="mailto:nabeehak@icloud.com"><img class="contact-icon" src="resources/email.png" style="width: 20px; margin-right: .5vw;"></a>
+                            <img class="contact-icon" src="resources/linkedin.png" onclick="window.open('https://linkedin.com/in/nabeeha-khurshid')" style="width: 20px;">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -36,19 +39,22 @@
         </div>
         
         <div class="about" id="about">
-            <div class="title"><em>ABOUT</em></div>
+            <div class="title" style="padding-top: 10vh;"><em>[ ABOUT ]</em></div>
             <div style="margin: 10vh 17vw; text-align: justify;">
-                I'm a Computer Science graduate looking to enter the tech industry as a software engineer with an interest in Java development. 
+                A Computer Science graduate who is a naturally inquisitive individual and enjoys challenging herself by solving problems. Despite an interest in Java development, over her educational history she has worked with different languages and developed an ability to absorb new skills quickly. Her enjoyment of programming stems from the fact that she believes it is the perfect intersection between logic and creativity, which caters to the two major parts of her personality. She is now seeking to enter the tech industry as a software engineer.
             </div>
-            <p style="text-align: center;"><em>resume</em></p>
+            <p style="text-align: center;">
+                <img src="resources/document.png"  style="width: 20px;">
+                <em> <a href="/resources/resume-final-general.pdf" style="text-decoration: none; color: black;">click for resume</a></em>
+            </p>
         </div>
         <div class="projects" id="projects">
-            <div class="title"><em>PROJECTS</em></div>
+            <div class="title"><em>[ PROJECTS ]</em></div>
             <div class="project-items">
                 <div class="project-item">
-                    <p style="font-size: 2vw; text-align: center;">Simple Bookstore</p>
+                    <p style="font-size: 2vw; text-align: center;"><b>Simple Bookstore</b></p>
                     <div style="font-size: 1.5vw; text-align: justify;">
-                        Allows users to create accounts, search database for books, add to basket + checkout.
+                        A dynamic Java Web application that allows users to create accounts, search database for books, add to basket + checkout.
                         <br>
                         Technologies:
                         <ul>
@@ -60,7 +66,7 @@
                     </div>
                 </div>
                 <div class="project-item">
-                    <p style="font-size: 2vw; text-align: center;">Banking Application</p>
+                    <p style="font-size: 2vw; text-align: center;"><b>Banking Application</b></p>
                     <div style="font-size: 1.5vw; text-align: justify;">
                         A three-tier Java enterprise application that allows users to create banking accounts, add + withdraw money.
                         <br>
@@ -73,7 +79,7 @@
                     </div>
                 </div>
                 <div class="project-item">
-                    <p style="font-size: 2vw; text-align: center;">Trading Application</p>
+                    <p style="font-size: 2vw; text-align: center;"><b>Trading Application</b></p>
                     <div style="font-size: 1.5vw; text-align: justify;">
                         A full stack Java application for an online trading platform where users can create buy or sell orders on fictional stocks. 
                         Implements a trading algorithm to find the best match on an order.
@@ -90,11 +96,10 @@
                 <img src="resources/githubicon.png"  style="width: 20px;">
                 <em>click for github</em></p>
         </div>
-        <div class="contact" id="contact">
-            <div class="title"><em>CONTACT</em></div>
-        </div>
         <footer>
-
+            <p style="text-align: center; padding-top: 3vw;">
+                <em><a href="#nav" style="text-decoration: none; color: black;">back to top</a></em>
+            </p>
         </footer>
     </body>
 </html>

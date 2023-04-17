@@ -73,3 +73,14 @@ ul {
     width: 30vw;
     padding: 0 5vw;
 }
+
+.contact {
+    height: 100vh;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
